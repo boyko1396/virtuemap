@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+  <title>Loader</title>
+  <link href="./img/cropped-VM_symbol_favicon-32x32.png" type="image/png" rel="icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="body body--theme_feta body--loader">
+
+    <div id="site">
+
+      <div class="loader">
+        <div class="loader-wrap">
+          <a href="#" class="logo loader-wrap__logo">
+            <img class="img logo__img" src="img/logo.png" alt="JourNeys">
+          </a>
+          <h1 class="loader-wrap__title">Calculating your results</h1>
+          <div class="loader-wrap__animation">
+            <svg class="loader-wrap__animation-img" style="overflow: hidden;">
+            <g><path d="M 50,100 A 1,1 0 0 1 50,0"></path></g>
+            <g><path d="M 50,75 A 1,1 0 0 0 50,-25"></path></g>
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#FF56A1;stop-opacity:1"></stop>
+                <stop offset="100%" style="stop-color:#FF9350;stop-opacity:1"></stop>
+              </linearGradient>
+            </defs>
+            </svg>
+            <style>
+              svg{overflow:visible!important;width:100px;height:160px;top:40px;position:relative}svg g{animation:slide 2s linear infinite}svg g:nth-child(2){animation-delay:.5s}svg g:nth-child(2) path{animation-delay:.5s;stroke-dasharray:0 158px;stroke-dashoffset:1px}svg path{stroke:url(#gradient);stroke-width:20px;stroke-linecap:round;fill:none;stroke-dasharray:0 157px;stroke-dashoffset:0;animation:escalade 2s cubic-bezier(.8,0,.2,1) infinite}@keyframes slide{0%{transform:translateY(-50px)}100%{transform:translateY(50px)}}@keyframes escalade{0%{stroke-dasharray:0 157px;stroke-dashoffset:0}50%{stroke-dasharray:156px 157px;stroke-dashoffset:0}100%{stroke-dasharray:156px 157px;stroke-dashoffset:-156px}}
+            </style>
+          </div>
+          <div class="elementor-counter">
+            <div class="elementor-counter__wrapper">
+              <span class="elementor-counter__prefix"></span>
+              <span class="elementor-counter__number" data-duration="10000" data-to-value="100" data-from-value="0" data-delimiter=",">100</span>
+              <span class="elementor-counter__suffix">%</span>
+            </div>
+            <div class="elementor-counter-title">Calculating</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- script BEGIN -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- script END -->
+
+</body>
+</html>

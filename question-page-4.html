@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+  <title>Question - Four</title>
+  <link href="./img/cropped-VM_symbol_favicon-32x32.png" type="image/png" rel="icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="site">
+
+      <!-- header BEGIN -->
+      <header class="header header--question">
+        <div class="header__container">
+          <button class="btn header__back-btn">
+            <span class="btn__inner">
+              <svg class="icon btn__icon">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <span class="btn__title">BACK</span>
+            </span>
+          </button>
+          <a href="#" class="logo header__logo logo--small">
+            <img class="img logo__img" src="img/logo.png" alt="JourNeys">
+          </a>
+          <div class="page-counter header__page-counter">
+            <span class="page-counter__item page-counter__item--page-now">4</span>
+            /
+            <span class="page-counter__item">18</span>
+          </div>
+        </div>
+        <div class="question-load header__question-load question-load--four"></div>
+      </header>
+      <!-- header END -->
+      <!-- question-intro BEGIN -->
+      <section class="question-intro">
+        <div class="container question-intro__container">
+          <picture class="picture question-intro__picture">
+            <img src="img/svg/question-intro-page-4.svg" alt="How easily distracted are you?" class="question-intro__img">
+          </picture>
+          <div class="concentration question-intro__concentration">
+            <h2 class="title concentration__title">How easily distracted are you?</h2>
+            <div class="row concentration__row">
+              <div class="row__col concentration__col row__col--12">
+                <lable class="el-checkbox">
+                  <input type="radio" class="el-checkbox__input" value="Easily distracted">
+                  <span class="el-checkbox__inner">Easily distracted</span>
+                </lable>
+              </div>
+              <div class="row__col concentration__col row__col--12">
+                <lable class="el-checkbox">
+                  <input type="radio" class="el-checkbox__input" value="Sometimes lose focus">
+                  <span class="el-checkbox__inner">Sometimes lose focus</span>
+                </lable>
+              </div>
+              <div class="row__col concentration__col row__col--12">
+                <lable class="el-checkbox">
+                  <input type="radio" class="el-checkbox__input" value="Rarely lose focus">
+                  <span class="el-checkbox__inner">Rarely lose focus</span>
+                </lable>
+              </div>
+              <div class="row__col concentration__col row__col--12">
+                <lable class="el-checkbox">
+                  <input type="radio" class="el-checkbox__input" value="Always laser-focused">
+                  <span class="el-checkbox__inner">Always laser-focused</span>
+                </lable>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- question-intro END -->
+    </div>
+
+    <!-- script BEGIN -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- script END -->
+
+</body>
+</html>

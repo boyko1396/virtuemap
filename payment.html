@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+  <title>Modal</title>
+  <link href="./img/cropped-VM_symbol_favicon-32x32.png" type="image/png" rel="icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="body body--theme_feta body--loader">
+
+    <div id="site">
+
+      <!-- payment BEGIN -->
+      <section class="payment">
+        <div class="container payment__container">
+          <div class="payment__wrap">
+            <button class="payment__btn payment__btn--close">
+              <span class="payment__btn-line"></span>
+              <span class="payment__btn-line"></span>
+            </button>
+            <div class="payment__header">
+              <img src="img/img-steps-1.png" alt="" class="img payment__img-steps">
+            </div>
+            <div class="payment__price">
+              <h4 class="title payment__title">Order Summary</h4>
+              <table class="table payment__table">
+                <tr>
+                  <th><span class="text payment__text">Virtue Map One-Time</span></th>
+                  <th><span class="text payment__text">$79.99</span></th>
+                </tr>
+                <tr>
+                  <th><span class="text payment__text">Discount (-50%)</span></th>
+                  <th><span class="text payment__text">-$40</span></th>
+                </tr>
+              </table>
+              <div class="payment__line"></div>
+              <table class="table payment__table">
+                <tr>
+                  <th><span class="text payment__text payment__text--big">Total</span></th>
+                  <th><span class="text payment__text payment__text--big">$39.99</span></th>
+                </tr>
+              </table>
+              <p class="payment__description">Billed every month</p>
+            </div>
+            <form action="post" class="payment__form">
+              <div class="payment__form-inner">
+                <lable class="lable payment__lable" for="payment-email">Email*</lable>
+                <input type="email" class="input payment__input" id="payment-email" placeholder="***@gmail.com">
+              </div>
+            </form>
+            <h3 class="payment__form-title">Select a secure payment method</h3>
+            <form action="post" class="form-radio payment__form-radio">
+              <div class="row payment__row">
+                <div class="row__col payment__col row__col--theme_bg row__col--12">
+                  <h2 class="form-radio__form-title">Payment Information</h2>
+                </div>
+                <div class="row__col payment__col row__col--theme_bg row__col--12">
+                  <div class="form-radio__inner">
+                    <div class="form-radio__header">
+                      <input type="radio" class="input form-radio__input-radio form-radio__input-radio--btn" id="form-radio-paypal" name="cards">
+                      <lable class="form-radio__header-title" for="form-radio-paypal">PayPal</lable>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col payment__col row__col--theme_bg row__col--12">
+                  <div class="form-radio__inner">
+                    <div class="form-radio__header">
+                      <input type="radio" class="input form-radio__input-radio form-radio__input-radio--btn" id="form-radio-paypal" name="cards">
+                      <lable class="form-radio__header-title" for="form-radio-paypal">Credit Card (Stripe)</lable>
+                    </div>
+                    <div class="form-radio__content">
+                      <span class="form-radio__inner-content">
+                        <input type="text" class="input form-radio__input-radio form-radio__input-radio--text" id="card-number" name="cards" placeholder="Card Number">
+                        <img src="img/svg/wallet.svg" alt="" class="icon form-radio__input-icon">
+                      </span>
+                      <span class="form-radio__inner-content">
+                        <input type="text" class="input form-radio__input-radio form-radio__input-radio--text" id="mm-yy" name="cards" placeholder="MM/YY">
+                      </span>
+                      <span class="form-radio__inner-content">
+                        <input type="password" class="input form-radio__input-radio form-radio__input-radio--text" id="form-radio-card-cvc" name="cards" placeholder="CVV">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col payment__col row__col--theme_bg row__col--12">
+                  <div class="form-radio__inner">
+                    <div class="form-radio__header">
+                      <input type="radio" class="input form-radio__input-radio form-radio__input-radio--btn" id="form-radio-google-pay" name="cards">
+                      <lable class="form-radio__header-title" for="form-radio-paypal">Google Pay</lable>
+                      <img src="img/svg/googlepay.svg" alt="Google Pay" class="img form-radio__icon-google">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="row payment__row">
+              <div class="row__col payment__col row__col--12">
+                <button class="payment__btn payment__btn--paypal">
+                  <img src="img/svg/paypal.svg" alt="paypal" class="icon payment__btn-icon">
+                </button>
+              </div>
+              <div class="row__col payment__col row__col--12">
+                <button type="submit" class="payment__btn payment__btn--submit-payment h btn--theme_gigas">Submit secure payment</button>
+              </div>
+              <div class="row__col payment__col row__col--12">
+                <button class="payment__btn payment__btn--google h">
+                  <span class="payment__btn-inner">
+                    <span><img src="img/svg/google-icon-1.svg" alt="google" class="icon payment__btn-icon"></span>
+                    <span><img src="img/svg/wallet.svg" alt="wallet" class="icon payment__btn-icon"></span>
+                  </span>
+                </button>
+              </div>
+              <div class="row__col payment__col row__col--12">
+                <img src="img/picture-cards-img-2.png" alt="" class="img payment__col-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- payment END -->
+
+    </div>
+
+    <!-- script BEGIN -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- script END -->
+
+</body>
+</html>
