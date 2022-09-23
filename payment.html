@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
-  <title>Modal</title>
+  <title>Payment</title>
   <link href="./img/cropped-VM_symbol_favicon-32x32.png" type="image/png" rel="icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -49,7 +49,7 @@
             </div>
             <form action="post" class="payment__form">
               <div class="payment__form-inner">
-                <lable class="lable payment__lable" for="payment-email">Email*</lable>
+                <label class="label payment__label" for="payment-email">Email*</label>
                 <input type="email" class="input payment__input" id="payment-email" placeholder="***@gmail.com">
               </div>
             </form>
@@ -63,7 +63,7 @@
                   <div class="form-radio__inner">
                     <div class="form-radio__header">
                       <input type="radio" class="input form-radio__input-radio form-radio__input-radio--btn" id="form-radio-paypal" name="cards">
-                      <lable class="form-radio__header-title" for="form-radio-paypal">PayPal</lable>
+                      <label class="form-radio__header-title" for="form-radio-paypal">PayPal</label>
                     </div>
                   </div>
                 </div>
@@ -71,7 +71,7 @@
                   <div class="form-radio__inner">
                     <div class="form-radio__header">
                       <input type="radio" class="input form-radio__input-radio form-radio__input-radio--btn" id="form-radio-paypal" name="cards">
-                      <lable class="form-radio__header-title" for="form-radio-paypal">Credit Card (Stripe)</lable>
+                      <label class="form-radio__header-title" for="form-radio-paypal">Credit Card (Stripe)</label>
                     </div>
                     <div class="form-radio__content">
                       <span class="form-radio__inner-content">
@@ -91,14 +91,14 @@
                   <div class="form-radio__inner">
                     <div class="form-radio__header">
                       <input type="radio" class="input form-radio__input-radio form-radio__input-radio--btn" id="form-radio-google-pay" name="cards">
-                      <lable class="form-radio__header-title" for="form-radio-paypal">Google Pay</lable>
+                      <label class="form-radio__header-title" for="form-radio-paypal">Google Pay</label>
                       <img src="img/svg/googlepay.svg" alt="Google Pay" class="img form-radio__icon-google">
                     </div>
                   </div>
                 </div>
               </div>
             </form>
-            <div class="row payment__row">
+            <div class="row payment__row payment__row--btn">
               <div class="row__col payment__col row__col--12">
                 <button class="payment__btn payment__btn--paypal">
                   <img src="img/svg/paypal.svg" alt="paypal" class="icon payment__btn-icon">
@@ -108,7 +108,7 @@
                 <button type="submit" class="payment__btn payment__btn--submit-payment h btn--theme_gigas">Submit secure payment</button>
               </div>
               <div class="row__col payment__col row__col--12">
-                <button class="payment__btn payment__btn--google h">
+                <button class="payment__btn payment__btn--google">
                   <span class="payment__btn-inner">
                     <span><img src="img/svg/google-icon-1.svg" alt="google" class="icon payment__btn-icon"></span>
                     <span><img src="img/svg/wallet.svg" alt="wallet" class="icon payment__btn-icon"></span>

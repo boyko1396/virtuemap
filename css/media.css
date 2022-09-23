@@ -41,12 +41,12 @@
 		display: block;
 	}
 	.header {
-  		position: fixed;
+  	position: fixed;
 		padding: 10px 0;
-		height: 82px;
+  	box-shadow: 0 0  20px 0 rgba(0,0,0,.3);
 	}
 	.header--question {
-  		background: rgba(245,255,242,1) !important;
+		background: rgba(245,255,242,1) !important;
 	}
 	.header__logo .logo__img {
 		height: calc(var(--header-height) - 20px);
@@ -67,6 +67,9 @@
 	}
 	.header__nav .nav__link {
 		font-size: 22px; 
+	}
+	.intro {
+		padding-top: calc(var(--header-height) + 40px);
 	}
 	.intro__row {
 		margin: 0;
@@ -90,6 +93,50 @@
 	}
 	.intro__img {
 		object-fit: contain;
+	}
+	.intro-content-copyright {
+		max-width: 100%;
+	}
+	.header__nav {
+  	position: relative;
+  	top: calc(40px + var(--header-height));
+  }
+	.header__nav .nav__list {
+  	flex-direction: column;
+  	align-items: center;
+	}
+	.header__nav .nav__item {
+ 		margin: 0 0 20px 0;
+	}
+	.header__container {
+ 	 	height: 100%;
+  	flex-direction: column;
+  	align-items: center;
+	}
+	.header--plane .header__container,
+	.header--question .header__container,
+	.header--question .header__container,
+	.header--price .header__container {
+		flex-direction: row;
+	}
+	.price-benefits__img {
+		min-height: 100%;
+	}
+	.price-intro__list {
+		padding: 0;
+	}
+	.price-intro {
+		padding-bottom: 20px;
+	}
+	.price-benefits__img {
+		min-height: 100%;
+	}
+	.price-benefits--offter,
+	.price-benefit {
+		padding-bottom: 40px !important;
+	}
+	.price-list-card__btn {
+		width: 100%;
 	}
 }
 
@@ -203,7 +250,7 @@
  		height: 700px;
  	}
  	.header__btn {
- 		font-size: 18px;
+ 		font-size: 16px;
  	}
  	.our-promise__picture,
  	.plane-procrastination__picture {
@@ -245,6 +292,42 @@
  	.plan-eliminate__img {
  		height: auto;
  	}
+ 	.price-list-card {
+ 		margin: 0 auto;
+ 	}
+ 	.step-by-step__picture {
+ 		height: 100%;
+ 	}
+ 	.step-by-step__img {
+ 		height: auto;
+ 		width: 400px;
+ 		margin: 0 auto;
+ 	}
+ 	.step-by-step__img--bg,
+ 	.step-by-step-cards__img-bg {
+ 		display: none;
+ 	}
+ 	.step-by-step__row {
+ 		padding: 10px 10px;
+ 		background: var(--color-amethyst);
+ 		margin: 0 0 20px;
+ 	}
+ 	.step-by-step-cards {
+ 		margin: 0;
+ 	}
+ 	.comments__col,
+ 	.step-by-step-cards__col:not(:last-child) {
+ 		margin-bottom: 20px;
+ 	}
+ 	.step-by-step-cards__card {
+ 		background: #EBE1B2;
+ 	}
+ 	.scientific-advantages__wrap {
+ 		flex-direction: column;
+ 	}
+ 	.offter-img-card__img {
+ 		margin: 0 auto;
+ 	}
 }
 
 @media (max-width: 767px) {
@@ -274,6 +357,27 @@
 		height: 50px;
 		left: calc(50% - 25px);
 		top: calc(100% - 25px);
+	}
+	.discount__img {
+		width: 100%;
+	}
+	.discount__subtitle {
+		font-size: 12px;
+	}
+	.offer-counter {
+		padding: 12px 0;
+	}
+	.offer-counter--discount {
+		margin-bottom: 20px;
+	}
+	.counter__minute,
+	.counter__dots,
+	.counter__secend,
+	.offer-counter__label {
+		font-size: 20px;
+	}
+	.discount__subtitle {
+		margin-bottom: 20px;
 	}
 }
 
